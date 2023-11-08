@@ -14,14 +14,3 @@ int PrimeNumber(int n)
     }
     return 0;
 }
-
-int main()
-{
-    int num = 41;
-    if (PrimeNumber(num) == 0)
-        printf("%d is a prime number", num);
-    else
-        printf("%d is not a prime number", num);
-    
-    return 0;
-}

@@ -3,8 +3,6 @@
 #include <string>
 using namespace std;
 
-list<string> List;
-
 auto ReverseList(list<string> a)
 {
     list<string> Reverse;
@@ -19,4 +17,5 @@ auto ReverseList(list<string> a)
         auto get = *it;
         Reverse.push_back(get);
     }
+    return Reverse;
 }
