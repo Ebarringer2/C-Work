@@ -9,9 +9,14 @@ auto ReverseList(list<string> a)
 {
     list<string> Reverse;
     int n = a.size();
+    list<string>::iterator it = a.begin();
     for (int i = 0; i < n; i++)
     {
-        auto j = a[(n - 1) - i];
-        Reverse.push_back(j);
+        for (int j = 0; j < i; j++)
+        {
+            ++it;
+        }
+        auto get = *it;
+        Reverse.push_back(get);
     }
 }
